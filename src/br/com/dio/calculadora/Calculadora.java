@@ -1,6 +1,5 @@
 package br.com.dio.calculadora;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Calculadora {
@@ -19,10 +18,10 @@ public class Calculadora {
         int multiplicar = multiplicar(a, b);
         double dividir = dividir(a, b);
 
-        System.out.println("Soma: ", + somar);
-        System.out.println("Subtração: ", + subtrair);
-        System.out.println("Multiplicação: ", + multiplicar);
-        System.out.println("Divisão: ", + dividir);
+        System.out.println("Soma: " + somar);
+        System.out.println("Subtração: " + subtrair);
+        System.out.println("Multiplicação: " + multiplicar);
+        System.out.println("Divisão: " + dividir);
 
     }
 

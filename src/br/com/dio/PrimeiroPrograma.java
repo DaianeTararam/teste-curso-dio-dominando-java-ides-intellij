@@ -3,8 +3,8 @@ package br.com.dio;
 import br.com.dio.model.Gato;
 
 public class PrimeiroPrograma {
-    public void main(String[] args) {
-        Gato gato = new Gato()
+    public static void main(String[] args) {
+        Gato gato = new Gato();
         System.out.println(gato);
 
         Livro livro1 = new Livro("O problemas dos três corpos", 300);
@@ -17,22 +17,14 @@ public class PrimeiroPrograma {
 
     }
 
-    class Livro {
-        private String nome;
-        private Integer numPaginas;
+    static class Livro {
+        private final String nome;
+        private final Integer numPaginas;
 
         public Livro(String nome, Integer numPaginas) {
             this.nome = nome;
             this.numPaginas = numPaginas;
 
-        }
-
-        public String getNome() {
-            return nome;
-        }
-
-        public void setNome(String nome) {
-            this.nome = nome;
         }
 
         @Override
